@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.pilgr",
+    "module": "paperdb",
+    "version": "2.7.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.esotericsoftware",
+          "module": "kryo",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "de.javakaffee",
+          "module": "kryo-serializers",
+          "version": {
+            "requires": "0.40"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "paperdb-2.7.2.aar",
+          "url": "paperdb-2.7.2.aar",
+          "size": 26177,
+          "sha512": "1391930f09bd0dc0e107b0a15ffdc9819f9b8d174bdf62c35e7ae3ba397664d9efb216a4e748274af1123eecdec56efa8be1f98fba2dc03f7f248ea2e1ef9479",
+          "sha256": "b29545d1e7d4cdba4cce6e3d686a96fab17f52ab473ecb706068cf180698d144",
+          "sha1": "51407c9edad2065a6ee975876eeff12decb203fd",
+          "md5": "272531f4cc1e09e01e1f04719a9e815c"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.esotericsoftware",
+          "module": "kryo",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "de.javakaffee",
+          "module": "kryo-serializers",
+          "version": {
+            "requires": "0.40"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "paperdb-2.7.2.aar",
+          "url": "paperdb-2.7.2.aar",
+          "size": 26177,
+          "sha512": "1391930f09bd0dc0e107b0a15ffdc9819f9b8d174bdf62c35e7ae3ba397664d9efb216a4e748274af1123eecdec56efa8be1f98fba2dc03f7f248ea2e1ef9479",
+          "sha256": "b29545d1e7d4cdba4cce6e3d686a96fab17f52ab473ecb706068cf180698d144",
+          "sha1": "51407c9edad2065a6ee975876eeff12decb203fd",
+          "md5": "272531f4cc1e09e01e1f04719a9e815c"
+        }
+      ]
+    }
+  ]
+}

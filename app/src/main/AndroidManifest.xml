@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Coursework">
+        <activity
+            android:name=".Order"
+            android:exported="false" />
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Parfum"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Powder"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Nailpolish"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Highlighter"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Mascara"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Sculpturing"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Lipstick"
+            android:exported="false" />
+        <activity
+            android:name=".Categories.Concealer"
+            android:exported="false" />
+        <activity
+            android:name=".CategorySpecial"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryUser"
+            android:exported="false" />
+        <activity
+            android:name=".CropperActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.coursework.CropperActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.coursework.Settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Coursework.NoActionBar">
+            <intent-filter>
+                <action android:name="com.example.coursework.Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Admin.AdminCategory"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.coursework.AdminCategory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Admin.AdminHome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.coursework.AdminHome" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.coursework.SignIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.coursework.LogIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

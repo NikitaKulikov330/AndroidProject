@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/close_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Close"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"/>
+            <TextView
+                android:id="@+id/save_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:textSize="18sp"
+                android:layout_alignParentEnd = "true"
+                android:layout_marginRight="15dp"
+                android:textStyle="italic|bold"/>
+             </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile"
+        android:layout_below="@id/bar_settings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <EditText
+        android:id="@+id/change_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/boundsbtn"
+        android:ems="10"
+        android:hint="Edit email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/DarkGrey"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/change_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/boundsbtn"
+        android:ems="10"
+        android:hint="Edit password"
+        android:inputType="textVisiblePassword"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/DarkGrey"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id="@+id/change_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/boundsbtn"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/DarkGrey"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

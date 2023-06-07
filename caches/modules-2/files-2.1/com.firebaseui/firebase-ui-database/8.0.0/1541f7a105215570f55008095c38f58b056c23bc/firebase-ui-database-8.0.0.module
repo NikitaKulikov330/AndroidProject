@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.firebaseui",
+    "module": "firebase-ui-database",
+    "version": "8.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.firebaseui",
+          "module": "firebase-ui-common",
+          "version": {
+            "requires": "8.0.0"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-database"
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.paging",
+          "module": "paging-rxjava3",
+          "version": {
+            "requires": "3.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "firebase-ui-database-8.0.0.aar",
+          "url": "firebase-ui-database-8.0.0.aar",
+          "size": 37776,
+          "sha512": "69b99a936f3006ef98f89db1cc07ee2015c5676c06ade54ba3d761264f71e5e3f0136a6a7a5f30e56f4fc69953bb453b3e3e219c5bbc2808498f418e810db91c",
+          "sha256": "acc12cdb71ca8ed08346f028cc3ca4e7bb4213a344843e5e17171600dd9e1511",
+          "sha1": "976cb049f75c48d0e50a161baecdc6fa6badd3ad",
+          "md5": "c20a316591f0e009cbdc1182e2f7893e"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-bom",
+          "version": {
+            "requires": "28.2.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.firebaseui",
+          "module": "firebase-ui-common",
+          "version": {
+            "requires": "8.0.0"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-database"
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "androidx.paging",
+          "module": "paging-rxjava3",
+          "version": {
+            "requires": "3.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "firebase-ui-database-8.0.0.aar",
+          "url": "firebase-ui-database-8.0.0.aar",
+          "size": 37776,
+          "sha512": "69b99a936f3006ef98f89db1cc07ee2015c5676c06ade54ba3d761264f71e5e3f0136a6a7a5f30e56f4fc69953bb453b3e3e219c5bbc2808498f418e810db91c",
+          "sha256": "acc12cdb71ca8ed08346f028cc3ca4e7bb4213a344843e5e17171600dd9e1511",
+          "sha1": "976cb049f75c48d0e50a161baecdc6fa6badd3ad",
+          "md5": "c20a316591f0e009cbdc1182e2f7893e"
+        }
+      ]
+    }
+  ]
+}

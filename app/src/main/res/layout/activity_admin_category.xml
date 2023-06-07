@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminCategory">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose category"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/title1">
+
+        <ImageView
+            android:id="@+id/lipsticks"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/lipstick2" />
+
+        <ImageView
+            android:id="@+id/highlighters"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/highlighters3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/first_line">
+
+        <ImageView
+            android:id="@+id/mascara"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/mascara"
+            />
+
+        <ImageView
+            android:id="@+id/nailpolish"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/nailpolish" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/second_line">
+
+        <ImageView
+            android:id="@+id/concealer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/concealer"
+            />
+
+        <ImageView
+            android:id="@+id/powder"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/powder" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/last_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/third_line">
+
+        <ImageView
+            android:id="@+id/sculpturing"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/sculpturing"
+            />
+
+        <ImageView
+            android:id="@+id/parfums"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/parfums" />
+    </LinearLayout>
+
+</RelativeLayout>
